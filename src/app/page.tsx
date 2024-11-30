@@ -12,8 +12,13 @@ export default function Home() {
 
   return (
     <div>
-      <button onClick={() => execute("FAIL")}>fail</button>
-      <button onClick={() => execute("REDIRECT")}>redirect</button>
+      <p>{`Press "fail"; check console; press "redirect"; see how there's a second error being logged on redirect.`}</p>
+      <div>
+        <button onClick={() => execute("FAIL")}>fail</button>
+      </div>
+      <div>
+        <button onClick={() => execute("REDIRECT")}>redirect</button>
+      </div>
     </div>
   );
 }
